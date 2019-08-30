@@ -16,17 +16,16 @@ class Dog
     @@all
   end 
   
-  binding.pry
-  def self.print_all
-    @@all.each {|dog| puts "#{dog}"}
-  end 
-  
   def save
     @@all << self 
   end 
   
   def self.clear_all
     @@all.clear
+  end 
+  
+   def self.print_all
+    @@all.each {|dog| puts "#{dog}"}
   end 
   
 end 
