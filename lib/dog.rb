@@ -16,8 +16,8 @@ class Dog
     @@all
   end 
   
+  binding.pry
   def self.print_all
-    binding.pry
     @@all.each {|dog| puts "#{dog}"}
   end 
   
